@@ -1,0 +1,113 @@
+/* Reset */
+:root { 
+    --clr-primary-400: hsl(220, 15%, 55%);
+    --clr-primary-700: hsl(218, 44%, 22%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(212, 45%, 89%);
+
+    --clr-primary-hsla-400: hsl(220, 15%, 55%, 0.1);
+    
+    --ff-base: "Outfit";
+
+    --fw-neutral: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+ 
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+/* Code */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-base);
+    background-color: var(--clr-neutral-200);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 497px;
+    width: 320px;
+    border-radius: 20px;
+    background-color: var(--clr-neutral-100);
+    padding: 16px;
+    box-shadow: 0px 10px 10px var( --clr-primary-hsla-400); 
+}
+
+img {
+    height: 288px;
+    width: 288px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--clr-primary-700);
+    text-align: center;
+    margin-top:24px;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+p {
+    color: var(--clr-primary-400);
+    text-align: center;
+    margin:0 16px 24px 16px;
+    font-size: 15px;
+}
+
+
+/* Attribution */
+
+  .attribution {
+    margin-top: 2rem;
+    font-size: 11px;
+    position: absolute;
+    transform: translateY(20rem);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
